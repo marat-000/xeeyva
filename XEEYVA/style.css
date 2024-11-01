@@ -153,6 +153,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
 }
 
 .menu-grid {
@@ -175,7 +176,7 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
-  margin-right: 20px;
+  margin: 0 5px;
 }
 
 .menu-card img {
@@ -424,5 +425,111 @@ footer {
   top: 5900px;
   transform: rotate(0deg);
 }
+.zerno23 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 6100px;
+  transform: rotate(0deg);
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socials-btn2 {
+  display: flex;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.socials-btn2-img {
+  width: 35px;
+  height: 35px;
+}
+.telegram {
+  text-decoration: none;
+  color: black;
+}
+.socials-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid grey;
+  background-color: white;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 10px;
+}
+.instagram {
+  text-decoration: none;
+  color: black;
+}
 
+.coffee_header1 {
+  width: 150px;
+  height: 100%;
+  transform: rotate(-15deg);
+}
+.coffees {
+  display: flex;
+  gap: 50px;
+}
+.cff {
+  transform: rotate(-30deg);
+  position: relative;
+  top: 140px;
+}
+.cff1 {
+  transform: rotate(15deg);
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+.location {
+  position: relative;
+  z-index: 1;
+}
+/* Стили для анимируемого объекта */
+.coffee_header {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  animation: moveUpDown 3s ease-in-out infinite;
+}
 
+/* Ключевые кадры анимации */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Начальное положение */
+  }
+  50% {
+    transform: translateY(-20px); /* Двигается вверх на 20px */
+  }
+  100% {
+    transform: translateY(0); /* Возвращается в исходное положение */
+  }
+}
+
+.coffee_header1 {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  animation: moveUpDown1 3s ease-in-out infinite;
+}
+
+/* Ключевые кадры анимации */
+@keyframes moveUpDown1 {
+  0% {
+    transform: translateY(0); /* Начальное положение */
+  }
+  50% {
+    transform: translateY(-20px); /* Двигается вверх на 20px */
+  }
+  100% {
+    transform: translateY(0); /* Возвращается в исходное положение */
+  }
+}
