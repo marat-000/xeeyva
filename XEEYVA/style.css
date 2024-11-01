@@ -1,0 +1,435 @@
+/* Основные стили */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #1a1a2e;
+}
+
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #1a1a2e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1a1a2e;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Бургер-меню */
+.burger {
+  margin-right: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+/* Боковое меню */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* скрыто за экраном */
+  width: 250px;
+  height: 100%;
+  background-color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 60px;
+  transition: right 0.3s;
+  z-index: 200;
+}
+
+.nav-menu.open {
+  right: 0; /* меню сдвигается на экран */
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-menu li {
+  margin: 20px 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* Затемненный фон */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 150;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Главная секция */
+.home-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0e4e8;
+}
+
+.main-image {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1a1a2e;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1a1a2f;
+}
+
+/* Секции */
+.section {
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* пространство между карточками */
+  width: 100%; /* Ширина контейнера */
+  max-width: 1200px;
+}
+
+.menu-card {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Белый фон */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #1a1a2e;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden; /* Для эффекта затемнения при наведении */
+}
+
+.menu-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.menu-card h3 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.menu-card p {
+  font-size: 1.1em;
+  color: #ff8b00; /* Цвет цены */
+  font-weight: bold;
+}
+
+/* Эффект при наведении на карточку */
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:hover img {
+  transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Стили для заголовков разделов */
+h2 {
+  text-align: center;
+  color: #1a1a2e;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 20px;
+  font-size: 16px;
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  z-index: 100;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  display: none; /* Изначально скрыта */
+}
+
+.back-to-top:hover {
+  background-color: #ffcc00;
+  transform: translateY(-3px);
+}
+
+.zerno {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  left: -30px;
+  transform: rotate(30deg);
+}
+
+.zerno2 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 1750px;
+  transform: rotate(60deg);
+}
+
+.zerno3 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 1300px;
+  transform: rotate(0deg);
+}
+.zerno4 {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  right: 0px;
+  top: 1900px;
+  transform: rotate(0deg);
+}
+.zerno5 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 10px;
+  top: 2300px;
+  transform: rotate(0deg);
+}
+.zerno6 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 2600px;
+  transform: rotate(-20deg);
+}
+.zerno7 {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  right: 0px;
+  top: 2700px;
+  transform: rotate(0deg);
+}
+.zerno8 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 3000px;
+  transform: rotate(30deg);
+}
+.zerno9 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 3200px;
+  transform: rotate(0deg);
+}
+.zerno10 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 3400px;
+  transform: rotate(20deg);
+}
+.zerno11 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 3600px;
+  transform: rotate(0deg);
+}
+
+.zerno12 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 3800px;
+  transform: rotate(0deg);
+}
+.zerno13 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 4000px;
+  transform: rotate(20deg);
+}
+.zerno14 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 4200px;
+  transform: rotate(0deg);
+}
+
+.zerno15 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 4400px;
+  transform: rotate(0deg);
+}
+.zerno16 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 4600px;
+  transform: rotate(20deg);
+}
+.zerno17 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 4800px;
+  transform: rotate(0deg);
+}
+
+.zerno18 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 5000px;
+  transform: rotate(0deg);
+}
+.zerno19 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 5200px;
+  transform: rotate(20deg);
+}
+.zerno20 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 5400px;
+  transform: rotate(0deg);
+}
+
+.zerno21 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 5700px;
+  transform: rotate(0deg);
+}
+.zerno22 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  left: 0px;
+  top: 5900px;
+  transform: rotate(0deg);
+}
+.zerno23 {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 0px;
+  top: 6100px;
+  transform: rotate(0deg);
+}
+

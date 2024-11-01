@@ -1,0 +1,90 @@
+/* Основной стиль страницы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  color: #1a1a2e;
+}
+
+header {
+  width: 100%;
+  background-color: #1a1a2e;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* Стиль карточки меню */
+.menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 20px; /* Отступ сверху для фиксированного хедера */
+}
+
+.card {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #ffcc00;
+}
+
+.card-content h2 {
+  color: #1a1a2e;
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff9900;
+  margin-top: 10px;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ffcc00;
+  color: #1a1a2e;
+}
