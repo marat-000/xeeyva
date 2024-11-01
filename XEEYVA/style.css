@@ -177,6 +177,7 @@ header {
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
   margin: 0 5px;
+  margin-right: 20px;
 }
 
 .menu-card img {
