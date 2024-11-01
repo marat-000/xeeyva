@@ -175,7 +175,7 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .menu-card img {
