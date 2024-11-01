@@ -159,14 +159,13 @@ header {
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; /* пространство между карточками */
+  gap: 0px; /* пространство между карточками */
   width: 100%; /* Ширина контейнера */
   max-width: 1200px;
 }
 
 .menu-card {
-  display: flex;
-  justify-content: center;
+  display: block;
   text-align: center;
   padding: 15px;
   border-radius: 12px;
