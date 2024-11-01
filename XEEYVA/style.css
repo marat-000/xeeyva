@@ -153,7 +153,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
 }
 
 .menu-grid {
@@ -176,7 +175,7 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
-  margin: 0 5px;
+  margin-right: 50px;
 }
 
 .menu-card img {
