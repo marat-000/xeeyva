@@ -534,3 +534,6 @@ footer {
     transform: translateY(0); /* Возвращается в исходное положение */
   }
 }
+.menu.section{
+  justify-content: center;
+}
