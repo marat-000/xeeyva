@@ -486,8 +486,12 @@ footer {
 .cff1 {
   transform: rotate(15deg);
   position: relative;
-  top: 5px;
+  top: -22px;
   right: 50px;
+}
+.rer2{
+  position: relative;
+  z-index: 1;
 }
 .location {
   position: relative;
