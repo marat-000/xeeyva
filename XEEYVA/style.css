@@ -471,7 +471,6 @@ footer {
 .coffee_header1 {
   width: 100px;
   height: 170px;
-
   transform: rotate(-15deg);
 }
 .coffees {
@@ -487,6 +486,7 @@ footer {
   transform: rotate(15deg);
   position: relative;
   top: 5px;
+  right: 30px;
 }
 .location {
   position: relative;
