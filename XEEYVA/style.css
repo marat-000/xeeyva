@@ -165,7 +165,8 @@ header {
 }
 
 .menu-card {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 15px;
   border-radius: 12px;
@@ -534,6 +535,4 @@ footer {
     transform: translateY(0); /* Возвращается в исходное положение */
   }
 }
-.menu.section{
-  justify-content: center;
-}
+
