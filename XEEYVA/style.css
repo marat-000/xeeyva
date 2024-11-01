@@ -153,8 +153,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0px;
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 .menu-grid {
