@@ -176,7 +176,7 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
-  margin: 0 5px;
+  margin: 0 0px;
   
 }
 
