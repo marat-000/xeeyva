@@ -161,6 +161,8 @@ header {
   gap: 20px; /* пространство между карточками */
   width: 100%; /* Ширина контейнера */
   max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-card {
