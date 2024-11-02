@@ -163,6 +163,7 @@ header {
   max-width: 1200px;
   flex-direction: column;
   align-items: center;
+  padding-right: 20px;
 }
 
 .menu-card {
@@ -177,7 +178,7 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden; /* Для эффекта затемнения при наведении */
-  margin-right: 20px;
+  margin-right: 10px;
   width: 220px;
   height: 300px;
 }
