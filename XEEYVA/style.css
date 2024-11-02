@@ -476,6 +476,13 @@ footer {
 .coffees {
   display: flex;
   gap: 50px;
+  margin-left: 20px;
+}
+.sss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .cff {
   transform: rotate(-30deg);
@@ -489,7 +496,7 @@ footer {
   top: -22px;
   right: 50px;
 }
-.rer2{
+.rer2 {
   position: relative;
   z-index: 1;
 }
